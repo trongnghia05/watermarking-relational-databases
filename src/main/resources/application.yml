@@ -1,0 +1,19 @@
+spring.datasource:
+  url: jdbc:mysql://127.0.0.1:3306/test4?useUnicode=yes&characterEncoding=UTF-8&useSSL=false&serverTimezone=UTC
+  username: root
+  password:
+  driver-class-name: com.mysql.cj.jdbc.Driver
+  continue-on-error: true
+  platform: mysql
+
+# SPRING DATA JPA
+spring.jpa.properties.hibernate:
+  dialect: org.hibernate.dialect.MySQLInnoDBDialect
+  hbm2ddl.auto: none
+  cache.use_second_level_cache: false
+  cache.use_query_cache: false
+  show_sql: false
+  use_sql_comments: false
+  format_sql: false
+  generate_statistics: false
+  jdbc.batch_size: 10000
